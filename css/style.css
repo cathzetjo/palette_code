@@ -1,0 +1,269 @@
+
+@font-face{
+    font-family: 'TitilliumWeb-SemiBold';
+    src: url(../assets/fonts/TitilliumWeb-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: 'TitilliumWeb-Regular';
+    src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
+}
+
+.wrapper {
+    max-width: 1200px;
+    min-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    font-family: TitilliumWeb-SemiBold, serif;
+    font-size: 13pt;
+}
+
+.menu > div {
+    padding: 5px 20px;
+    align-self: flex-start;
+}
+
+.menu > div > a:hover > img {
+    box-shadow: 0 3px 10px rgba(98, 117, 203, 1);
+    background-color: rgba(98, 117, 203, .5);
+ }
+
+.menu > div:nth-child(2)  {
+    flex-grow: 1;
+}
+
+.menu > div:nth-child(2)::after  {
+    content: " ";
+    border: 1px solid rgba(181, 178, 178, .6);
+    position: absolute;
+    top: 110%;
+    right: 0;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(140, 137, 137, .5);
+}
+
+.main {
+    display: flex;
+      margin: 5% 2% 2% 1%;
+}
+
+.left-bar {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+    margin-right: 10%;
+    font-family: TitilliumWeb-Regular, serif;
+    font-size: 13pt;
+}
+
+.tools {
+    align-self: flex-start;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    margin-bottom: 30%;
+    padding: 0 20px 40px;
+    box-shadow: 2px 2px 10px rgb(140, 137, 137);
+    border-radius: 2%;
+    width: 200px;
+}
+
+.palette {
+    align-self: flex-start;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    margin-bottom: 30%;
+    padding: 0 20px 40px;
+    box-shadow: 2px 2px 10px rgb(140, 137, 137);
+    border-radius: 2%;
+    width: 200px;
+}
+
+.tools > div {
+    display: flex;
+}
+
+.tools > div > p {
+    padding-left: 40px;
+}
+
+.tools > div > img:hover,
+.tools > div > img:active {
+    box-shadow: 0 0 5px rgb(255, 253, 80);
+    background-color: rgba(255, 253, 80, .6);
+    }
+
+.palette > div > div:hover,
+.palette > div > div:active {
+    border: 4px solid rgb(0, 0, 0);
+}
+
+.palette > div {
+    display: flex;
+}
+
+.palette > div > div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0);
+}
+
+.palette > div > p {
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.choose-color {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.choose-color:after {
+    content: " ";
+    border: 1px solid rgba(181, 178, 178, .4);
+    position: absolute;
+    top: 120%;
+    right: -10%;
+    width: 120%;
+}
+
+.tools div > p > span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.prev-color {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.prev-color:after {
+    content: " ";
+    border: 1px solid rgba(181, 178, 178, .4);
+    position: absolute;
+    top: 120%;
+    right: -10%;
+    width: 120%;
+}
+
+.prev-color-item {
+    background-color: rgb(144, 238, 144);
+}
+
+.current-color-item {
+    background-color: rgb(140, 137, 137);
+}
+
+.blue-color-item {
+    background-color: rgb(40, 198, 225);
+}
+
+.red-color-item {
+    background-color: rgb(189, 19, 24);
+}
+
+
+.canvas {
+    flex-grow: 1;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    justify-content: flex-end;
+}
+
+.canvas > div {
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.canvas .first-figure {
+    background-color: rgb(140, 137, 137);
+    width: 200px;
+    height: 200px;
+    order: 1;
+    display: flex;
+}
+
+.canvas .second-figure {
+    background-color: rgb(183, 179, 179);
+    width: 200px;
+    height: 200px;
+    order: 2;
+    display: flex;
+   }
+
+.canvas .third-figure {
+    background-color: rgb(140, 137, 137);
+    width: 200px;
+    height: 200px;
+    right: 0;
+    order: 3;
+    display: flex;
+}
+
+.canvas .fourth-figure {
+    background-color: rgb(183, 179, 179);
+    width: 200px;
+    height: 200px;
+    order: 4;
+    display: flex;
+}
+
+.canvas .fifth-figure {
+    background-color: rgb(140, 137, 137);
+    width: 200px;
+    height: 200px;
+    order: 5;
+    display: flex;
+}
+
+.canvas .sixth-figure {
+    background-color: rgb(183, 179, 179);
+    width: 200px;
+    height: 200px;
+    order: 6;
+    display: flex;
+}
+
+.canvas .seventh-figure {
+    background-color: rgb(140, 137, 137);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    order: 7;
+    display: flex;
+}
+
+.canvas .eighth-figure {
+    background-color: rgb(183, 179, 179);
+    width: 200px;
+    height: 200px;
+    order: 8;
+    display: flex;
+}
+
+.canvas .ninth-figure {
+    background-color: rgb(140, 137, 137);
+    width: 200px;
+    height: 200px;
+    order: 9;
+    display: flex;
+}
+
+.canvas >div.over {
+    border: 2px dashed #3f3f3f;
+}
